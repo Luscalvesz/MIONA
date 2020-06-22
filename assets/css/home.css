@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    transition: 0.5s;
+    margin: 15px 0;
+
+}
+.title:hover{
+    transition: 0.5s;
+    letter-spacing: 3px;
+
+}
+
+.choice-cat{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cat{
+    cursor: pointer;
+}
+.cat-img{
+    transition: 0.5s;
+}
+.cat-img:hover{
+    transition: 0.5s;
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+}
+.cat-name{
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f08080;
+    padding: 10px 0;
+}
+body{
+    background: url("../img/bgImg.jpg");
+    background-size: 30%;
+}
+.header-nav{
+    margin-top: 1%;
+}
+.logo{
+    margin: 0 100px;
+}
+.nav-btn{
+    color: white;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    font-size: 1.3em;
+    font-weight: 100;
+    border-bottom: 1px solid transparent;
+}
+.nav-btn:hover{
+    /* transition: 0.8s; */
+    /* color: grey; */
+    /* border-bottom: 1px solid white; */
+    text-decoration-line: underline;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-trns{
+    background-color: rgba(255, 255, 255, 0.70);
+    height: 65vh;
+    width: 75%;
+    margin-top: 50px;
+}
+
+/* ----- slick -----*/
+.slick-arrow{
+    height: 35px;
+    width: 30px;
+    font-size: 0;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+}
+.slick-prev{
+    position: absolute;
+    left: 5%;
+    top: 20vh;
+    background: url(../img/rewind.png) no-repeat;
+}
+.slick-next{
+    position: absolute;
+    right: 5%;
+    top: 20vh;
+    background: url(../img/skip.png) no-repeat;
+}
+

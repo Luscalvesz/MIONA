@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: azure;
+    background-color: #f08080;
+}
+.footer-text-link{
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+
+}
+.footer-text{
+    color: white;
+    margin-right: 5px;
+    font-size: 10px;
+
+}
