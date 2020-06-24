@@ -1,40 +1,57 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
-
-.title{
-    text-transform: uppercase;
-    text-align: center;
-    cursor: default;
-    transition: 0.5s;
-    margin: 15px 0;
-
-}
-.title:hover{
-    transition: 0.5s;
-    letter-spacing: 3px;
-
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 15px 0;
 }
 
-.choice-cat{
-    display: flex;
-    justify-content: space-evenly;
+.title:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 3px;
 }
-.cat{
-    cursor: pointer;
+
+.choice-cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-.cat-img{
-    transition: 0.5s;
+
+.choice-cat.cat {
+  cursor: pointer;
 }
-.cat-img:hover{
-    transition: 0.5s;
-    /* transform: rotate(360deg); */
-    transform: scale(1.2);
+
+.choice-cat.cat-img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.cat-name{
-    margin-top: 20px;
-    text-align: center;
+
+.cat-img:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* transform: rotate(360deg); */
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.cat-name {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 25px 0;
+  font-family: lato;
+  letter-spacing: 2px;
+  cursor: default;
+  font-size: 20px;
 }
