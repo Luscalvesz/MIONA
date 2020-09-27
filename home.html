@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="header-nav">
-            <!-- href="migau.html" -->
-            <a class="nav-btn" href="mingau.html">Mingau</a>
-            <!-- img logo  -->
-            <a href="home.html"><img class="logo" src="" alt="logo"></a>
-            <!-- href="fiona.html" -->
-            <a class="nav-btn" href="fiona.html">Fiona</a>
+            <a href="home.html"><img onmouseover="menuSlideIn()" onmouseout="menuSlideOut()" id="logoImg" class="logo-img" src="./assets/img/cat-paw.png" alt="logo"></a>
+            <p class="logo-name" id="logoName">MIONA</p>
         </div>
         <div class="header-nav">
-            <!-- href="seugato.html" -->
-            <a class="nav-btn" href="#">Seu gato</a>
+            <a class="nav-btn" id="btn-m" href="mingau.html">Mingau</a>
+            <a class="nav-btn btn-f" id="btn-f" href="fiona.html">Fiona</a>
+            <a class="nav-btn" id="btn-all" href="seuGato.html">Seu gato</a>
         </div>
     </header>
     <main>
@@ -47,6 +45,9 @@
         <a class="footer-text-link" href="http://luscadev.com.br/" target="_blank">Luscadev</a>
         <p class="footer-text">Copyright © 2020</p>
     </footer>
+
+    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
 

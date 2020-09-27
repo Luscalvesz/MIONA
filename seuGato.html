@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mingau</title>
+    <title>Seu Gato</title>
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
-
 </head>
-
 <body>
     <header>
         <div class="header-nav">
@@ -25,28 +22,36 @@
     </header>
 
     <main>
-
-        <div class="bg-trns mingau">
-            <h1 class="title">Mingau</h1>
+        <div class="bg-trns seu-gato">
+            <h1 class="title">Seu Gato</h1>
             <ul id="carrossel">
-                <li class="carrossel-item"><img src="./assets/img/Mingau/IMG-20171127-WA0000.jpg" alt=""></li>
-                <li class="carrossel-item"><img src="./assets/img/Mingau/20200109_013543.jpg" alt=""></li>
-                <li class="carrossel-item"><img src="./assets/img/Mingau/20190224_083406.jpg" alt=""></li>
+                <li class="carrossel-item"><img src="./assets/img/seuGato/gato1.jpg" alt=""><p class="sobre-gato">Mingau <br> Dono: Lucas</p></li>
+                <li class="carrossel-item"><img src="./assets/img/seuGato/gato2.jpg" alt=""><p class="sobre-gato">Fiona <br> Dono: Maria</p></li>
             </ul>
+            
+            <div class="contato">
+                <p class="paragraph">Para adicionar o seu gato, siga os passos abaixo:</p>
+                <form class="form" action="POST" action="./email.php">
+                    <input class="field" type="text" name="email" placeholder="Digite o seu E-mail:">
+                    <input class="field" type="text" name="name" placeholder="Digite o seu nome:">
+                    <input class="field" type="text" name="name" placeholder="Digite o nome do gato:">
+                    <input class="field" type="file" name="file" id="formImg">
+                    <input class="submit-button" type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
     </main>
-
+        
     <footer>
         <p class="footer-text">Desenvolvido por </p>
         <a class="footer-text-link" href="http://luscadev.com.br/" target="_blank">Luscadev</a>
         <p class="footer-text">Copyright © 2020</p>
     </footer>
 
-
     <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
     <script type="text/javascript" src="./assets/js/slick.min.js"></script>
-    
-</body>
 
+
+</body>
 </html>

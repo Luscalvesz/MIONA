@@ -10,7 +10,9 @@
   cursor: default;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin: 15px 0;
+  padding: 30px 0;
+  color: white;
+  font-weight: 100;
 }
 
 .title:hover {
@@ -20,12 +22,8 @@
 }
 
 .choice-cat {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .choice-cat.cat {
@@ -37,21 +35,20 @@
   transition: 0.5s;
 }
 
-.cat-img:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  /* transform: rotate(360deg); */
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .cat-name {
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   margin: 25px 0;
-  font-family: lato;
   letter-spacing: 2px;
   cursor: default;
   font-size: 20px;
+  color: white;
+}
+.cat-img{
+  transition: 0.5s;
+  width: 250px;
+}
+.cat-img:hover {
+  transform: scale(1.2);
 }
