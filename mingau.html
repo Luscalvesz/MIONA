@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mingau</title>
+    <title>MIONA - Mingau</title>
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
@@ -12,15 +12,26 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header-nav">
-            <a href="home.html"><img onmouseover="menuSlideIn()" onmouseout="menuSlideOut()" id="logoImg" class="logo-img" src="./assets/img/cat-paw.png" alt="logo"></a>
+            <a href="index.html"><img onmouseover="menuSlideIn()" onmouseout="menuSlideOut()" id="logoImg" class="logo-img" src="./assets/img/cat-paw.png" alt="logo"></a>
             <p class="logo-name" id="logoName">MIONA</p>
         </div>
         <div class="header-nav">
             <a class="nav-btn" id="btn-m" href="mingau.html">Mingau</a>
             <a class="nav-btn btn-f" id="btn-f" href="fiona.html">Fiona</a>
             <a class="nav-btn" id="btn-all" href="seuGato.html">Seu gato</a>
+        </div>
+    </header>
+    <header class="headerMob" style="display: none;">
+        <div class="headerMob-nav">
+            <img class="navLogo" src="./assets/img/cat-paw.png" alt="logo miona" onclick="showMenu()">
+            <a class="navLink" href="index.html">MIONA</a>
+        </div>
+        <div id="mobNav">
+            <a class="navBtn" href="mingau.html">Mingau</a>
+            <a class="navBtn" href="fiona.html">Fiona</a>
+            <a class="navBtn" href="seuGato.html">Seu gato</a>
         </div>
     </header>
 
@@ -32,6 +43,9 @@
                 <li class="carrossel-item"><img src="./assets/img/Mingau/IMG-20171127-WA0000.jpg" alt=""></li>
                 <li class="carrossel-item"><img src="./assets/img/Mingau/20200109_013543.jpg" alt=""></li>
                 <li class="carrossel-item"><img src="./assets/img/Mingau/20190224_083406.jpg" alt=""></li>
+                <li class="carrossel-item"><img src="./assets/img/Mingau/mingauCima.jpg" alt=""></li>
+                <li class="carrossel-item"><img src="./assets/img/Mingau/mingauDormindo.jpg" alt=""></li>
+                <li class="carrossel-item"><img src="./assets/img/Mingau/mgn.jpg" alt=""></li>
             </ul>
         </div>
     </main>

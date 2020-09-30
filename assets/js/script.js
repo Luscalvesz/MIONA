@@ -17,7 +17,9 @@ function menuSlideIn() {
 function menuSlideOut() {
     $('#logoName').removeClass('e-active')
 }
-
+function showMenu() {
+    $('#mobNav').toggleClass('is--active')
+}
 $(document).ready(function () {
     carrossel();
     

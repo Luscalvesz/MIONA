@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Gato</title>
+    <title>MIONA - Seu Gato</title>
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header-nav">
-            <a href="home.html"><img onmouseover="menuSlideIn()" onmouseout="menuSlideOut()" id="logoImg" class="logo-img" src="./assets/img/cat-paw.png" alt="logo"></a>
+            <a href="index.html"><img onmouseover="menuSlideIn()" onmouseout="menuSlideOut()" id="logoImg" class="logo-img" src="./assets/img/cat-paw.png" alt="logo"></a>
             <p class="logo-name" id="logoName">MIONA</p>
         </div>
         <div class="header-nav">
             <a class="nav-btn" id="btn-m" href="mingau.html">Mingau</a>
             <a class="nav-btn btn-f" id="btn-f" href="fiona.html">Fiona</a>
             <a class="nav-btn" id="btn-all" href="seuGato.html">Seu gato</a>
+        </div>
+    </header>
+    <header class="headerMob" style="display: none;">
+        <div class="headerMob-nav">
+            <img class="navLogo" src="./assets/img/cat-paw.png" alt="logo miona" onclick="showMenu()">
+            <a class="navLink" href="index.html">MIONA</a>
+        </div>
+        <div id="mobNav">
+            <a class="navBtn" href="mingau.html">Mingau</a>
+            <a class="navBtn" href="fiona.html">Fiona</a>
+            <a class="navBtn" href="seuGato.html">Seu gato</a>
         </div>
     </header>
 
@@ -31,16 +42,17 @@
             
             <div class="contato">
                 <p class="paragraph">Para adicionar o seu gato, siga os passos abaixo:</p>
-                <form class="form" action="POST" action="./email.php">
-                    <input class="field" type="text" name="email" placeholder="Digite o seu E-mail:">
+                <form class="form" method="POST" action="./email.php">
+                    <input class="field" type="email" name="email" placeholder="Digite o seu E-mail:">
                     <input class="field" type="text" name="name" placeholder="Digite o seu nome:">
-                    <input class="field" type="text" name="name" placeholder="Digite o nome do gato:">
-                    <input class="field" type="file" name="file" id="formImg">
+                    <input class="field" type="text" name="catName" placeholder="Digite o nome do gato:">
+                    <input class="field" type="file" name="img" id="formImg">
                     <input class="submit-button" type="submit" value="Enviar">
                 </form>
             </div>
         </div>
     </main>
+    
         
     <footer>
         <p class="footer-text">Desenvolvido por </p>

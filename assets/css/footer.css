@@ -1,9 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-}
-
 footer{
     display: flex;
     justify-content: center;
@@ -17,11 +11,90 @@ footer{
     text-transform: uppercase;
     color: #505050;
     font-size: 10px;
-
 }
 .footer-text{
     color: #505050;
     margin-right: 5px;
     font-size: 10px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 414px) {
+    /* header */
+    .header{
+        display: none !important;
+    }
+    .headerMob{
+        display: block !important;
+    }
+    .headerMob-nav{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        background: black;
+    }
+    .navLink{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 10px 0;
+        letter-spacing: 10px;
+        margin-right: 10px;
+    }
+    .navLogo{
+        margin-left: 10px;
+    }
+    .navBtn{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .cat-img{
+        width: 145px;
+    }
+    #mobNav{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        background: #0e0e0e;
+        width: 100%;
+        top: 4px;
+        transition: 0.5s;
+    }
+    .is--active{
+        top: 50px !important;
+    }
+    .cat-name{
+        font-weight: 100;
+        letter-spacing: 5px;
+    }
+    /* form */
+    .field{
+        width: 80%;
+    }
+    
+    .contato{
+        margin: 35px 0 10px 0;
+    }
+    /* slick */
+    .slick-prev{
+        left: 0%;
+    }
+    .slick-next{
+        right: 0%;
+    }
+    .slick-arrow:hover {
+        transform: scale(1);
+    }
+    .carrossel-item img{
+        width: 310px;
+        height: 65vh;
+    }
 
 }

@@ -3,7 +3,6 @@
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
-
 .title {
   text-transform: uppercase;
   text-align: center;
@@ -14,27 +13,22 @@
   color: white;
   font-weight: 100;
 }
-
 .title:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 3px;
 }
-
 .choice-cat {
   display: flex;
   justify-content: space-evenly;
 }
-
 .choice-cat.cat {
   cursor: pointer;
 }
-
 .choice-cat.cat-img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .cat-name {
   text-align: center;
   text-transform: uppercase;
@@ -51,4 +45,17 @@
 }
 .cat-img:hover {
   transform: scale(1.2);
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 414px) {
+
+
+
+
+
+
+
 }
