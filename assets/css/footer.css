@@ -92,7 +92,7 @@ footer{
     .slick-arrow:hover {
         transform: scale(1);
     }
-    .carrossel-item img{
+    .gato-item img{
         width: 310px;
         height: 65vh;
     }

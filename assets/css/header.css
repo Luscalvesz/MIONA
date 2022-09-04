@@ -117,8 +117,9 @@ main{
     flex-direction: column;
 }
 .bg-trns{
-    background: rgb(11,16,142);
-    background: linear-gradient(90deg, rgb(11, 16, 142) 25%, rgba(255,0,0,1) 100%);
+    /* background: rgb(11,16,142);
+    background: linear-gradient(90deg, rgb(11, 16, 142) 25%, rgba(255,0,0,1) 100%); */
+    background: #050230ad;
     border-radius: 25px;
     width: 100%;
     display: flex;
@@ -143,7 +144,7 @@ main{
     text-align: center;
     background: #ff000070;
 }
-.carrossel-item img{
+.gato-item img{
     width: 600px;
     margin: 0 auto;
     height: 70vh;
